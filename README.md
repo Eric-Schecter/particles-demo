@@ -2,7 +2,7 @@
 A demo of particles through transform feedback.  
 
 #### Profile
-![Wave](./screenshot/profile.gif)  
+![particles](./screenshot/profile.gif)  
 
 ## Reference
 [1] https://webgl2fundamentals.org/webgl/lessons/webgl-gpgpu.html  
@@ -13,5 +13,5 @@ This project is licensed under [![License: MIT](https://img.shields.io/badge/Lic
 ## Contact
 * Email:[eric199002@icloud.com](eric199002@icloud.com)
 * Twitter:[https://twitter.com/nikoniko600](https://twitter.com/nikoniko600)
-* Repo:[https://github.com/Eric-Schecter/water-simulation](https://github.com/Eric-Schecter/water-simulation)
-* Demo:[https://water-simulation.netlify.app](https://water-simulation.netlify.app/)
+* Repo:[https://github.com/Eric-Schecter/particles-demo](https://github.com/Eric-Schecter/particles-demo)
+<!-- * Demo:[https://water-simulation.netlify.app](https://water-simulation.netlify.app/) -->
