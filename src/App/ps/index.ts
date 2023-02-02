@@ -1,17 +1,14 @@
 import { Application } from "../gl";
-import { vec3 } from 'gl-matrix'
 import psVS from './shader/ps.vs';
 import psFS from './shader/ps.fs';
 import bypassFS from './shader/bypass.fs';
 import positionVS from './shader/position.vs';
-import { Camera } from "./camera";
 
 export class ParticleSystem extends Application {
   private vaoPos: WebGLVertexArrayObject[] = [];
   private tfs: WebGLTransformFeedback[] = [];
   private positionBuffers: WebGLBuffer[] = [];
   private velocityBuffers: WebGLBuffer[] = [];
-  private camera: Camera;
   private ps: WebGLProgram;
   private position: WebGLProgram;
   private particleCount = 20000;
@@ -19,18 +16,6 @@ export class ParticleSystem extends Application {
   private targetLoc!: WebGLUniformLocation;
   constructor(container: HTMLDivElement) {
     super(container);
-
-    const { clientWidth, clientHeight } = this.canvas;
-    const fov = 60 / 180 * Math.PI;
-    const aspect = clientWidth / clientHeight;
-    const near = 0.1;
-    const far = 1000;
-    this.camera = new Camera();
-    this.camera.pos = vec3.fromValues(1, 1, -2);
-    this.camera.setProjection(fov, aspect, near, far);
-    this.camera.setView(vec3.fromValues(0, 0, 0));
-    this.camera.setViewport(0, 0, clientWidth, clientHeight);
-
     this.position = this.programLoader.load(this.gl, positionVS, bypassFS, ['newPosition', 'newVelocity']);
     this.ps = this.programLoader.load(this.gl, psVS, psFS);
   }
