@@ -14,4 +14,4 @@ This project is licensed under [![License: MIT](https://img.shields.io/badge/Lic
 * Email:[eric199002@icloud.com](eric199002@icloud.com)
 * Twitter:[https://twitter.com/nikoniko600](https://twitter.com/nikoniko600)
 * Repo:[https://github.com/Eric-Schecter/particles-demo](https://github.com/Eric-Schecter/particles-demo)
-<!-- * Demo:[https://water-simulation.netlify.app](https://water-simulation.netlify.app/) -->
+* Demo:[https://simple-particles-demo.netlify.app](https://simple-particles-demo.netlify.app)
